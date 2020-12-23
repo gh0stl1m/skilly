@@ -1,5 +1,5 @@
-const UrlSchema = require('./url');
+const URLModel = require('./url');
 
 module.exports = {
-  UrlSchema,
+  URLModel,
 };

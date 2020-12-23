@@ -1,7 +1,7 @@
 {
   "name": "@skilly/urlshortner-module",
   "version": "1.0.0",
-  "description": "This module contains all the business rules regarding the urshortner",
+  "description": "This module contains all the business rules regarding the urlhortner",
   "keywords": [],
   "author": "Santiago Sanchez Taborda <santiago.sanchez.t@gmail.com>",
   "license": "ISC",
@@ -20,7 +20,9 @@
     "url": "git+https://github.com/gh0stl1m/skilly.git"
   },
   "scripts": {
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "jest --config ./config/jest.config.js --watch-all",
+    "coverage": "npm run test --coverage"
   },
   "bugs": {
     "url": "https://github.com/gh0stl1m/skilly/issues"
@@ -28,13 +30,7 @@
   "homepage": "https://github.com/gh0stl1m/skilly#readme",
   "dependencies": {
     "@skilly/mongodb-connection-module": "^1.0.0",
-    "mongoose": "^5.11.8"
-  },
-  "devDependencies": {
-    "eslint": "^7.16.0",
-    "eslint-config-standard": "^16.0.2",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1"
+    "mongoose": "^5.11.8",
+    "shortid": "^2.2.16"
   }
 }
