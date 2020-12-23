@@ -19,6 +19,14 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "jest": "^26.6.3"
+    "jest": "^26.6.3",
+    "kcors": "^2.2.2",
+    "koa": "^2.13.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-compress": "^5.0.1",
+    "koa-conditional-get": "^3.0.0",
+    "koa-etag": "^4.0.0",
+    "koa-helmet": "^6.0.0",
+    "koa-validate": "^1.0.7"
   }
 }
