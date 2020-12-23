@@ -7,4 +7,6 @@ const UrlSchema = new Schema({
   hash: { type: String, required: true },
 }, { timestamps: true });
 
+UrlSchema.index({ hash: 1 });
+
 module.exports = dbConnection.model('url', UrlSchema);
