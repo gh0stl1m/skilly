@@ -27,7 +27,7 @@
   },
   "scripts": {
     "start:server": "yarn workspace @skilly/api-gw start",
-    "start:web": "yarn workspace @skilly/web-ui dev",
+    "start:web": "yarn workspace @skilly/web-ui start",
     "build:web": "yarn workspace @skilly/web-ui build"
   }
 }
