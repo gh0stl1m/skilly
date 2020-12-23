@@ -28,6 +28,8 @@
   },
   "homepage": "https://github.com/gh0stl1m/skilly#readme",
   "dependencies": {
+    "@skilly/statistics-module": "^1.0.0",
+    "@skilly/urlshortner-module": "^1.0.0",
     "boom": "^7.3.0",
     "kcors": "^2.2.2",
     "koa": "^2.13.0",
