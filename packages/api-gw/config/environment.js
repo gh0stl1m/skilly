@@ -1,6 +1,6 @@
 const dotenv = require('dotenv');
 
-const { constants: { supportedEnvironments } } = require('../utils');
+const { constants: { supportedEnvironments } } = require('../src/utils');
 
 let environment;
 let path;
