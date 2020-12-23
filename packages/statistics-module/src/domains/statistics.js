@@ -7,4 +7,6 @@ const StatisticsSchema = new Schema({
   url: { type: String, required: true, unique: true },
 }, { timestamps: true });
 
+StatisticsSchema.index({ url: 1 });
+
 module.exports = dbConnection.model('statistics', StatisticsSchema);
