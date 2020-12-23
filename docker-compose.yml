@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: ./packages/api-gw/Dockerfile
       args:
-        - PORT=$SERVER_PORT
+        - PORT=$API_SERVER_PORT
     depends_on:
       - db
     ports:
@@ -19,6 +19,26 @@ services:
       - skilly-network
     volumes:
       - ".env:/src/.env"
+
+  web-ui:
+    build:
+      context: .
+      dockerfile: ./packages/web-ui/Dockerfile
+      args:
+        - PORT=$WEB_SERVER_PORT
+    depends_on:
+      - api-gw
+    ports:
+      - "3000:3000"
+    container_name: web-ui
+    restart: unless-stopped
+    links:
+      - api-gw
+    networks:
+      - skilly-network
+    volumes:
+      - ".env:/src/app/packages/web-ui/.env"
+
   db:
     image: mongo
     container_name: db
