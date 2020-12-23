@@ -1,0 +1,21 @@
+{
+  "name": "@skilly/api-gw",
+  "version": "1.0.0",
+  "description": "This service gonna expose the API provided by the skilly service",
+  "keywords": [],
+  "author": "Santiago Sanchez Taborda <santiago.sanchez.t@gmail.com>",
+  "license": "ISC",
+  "main": "src/index.js",
+  "directories": {
+    "src": "src"
+  },
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  }
+}

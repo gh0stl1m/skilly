@@ -1,0 +1,21 @@
+{
+  "name": "@skilly/urlshortner-module",
+  "version": "1.0.0",
+  "description": "This module contains all the business rules regarding the urshortner",
+  "keywords": [],
+  "author": "Santiago Sanchez Taborda <santiago.sanchez.t@gmail.com>",
+  "license": "ISC",
+  "main": "src/index.js",
+  "directories": {
+    "src": "src"
+  },
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  }
+}
