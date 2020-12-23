@@ -15,19 +15,19 @@ const db = Mongoose.createConnection(config.mongodb.uri, {
 
 
 db.on('error', (err) => {
-  logger.error(`(sk-mongoconnection-module): connection error event: ${err.message}`);
+  logger.error(`[sk-mongoconnection-module]: connection error event: ${err.message}`);
   process.exit(1);
 });
 
-db.once('open', () => logger.info('(sk-mongoconnection-module): connection opened with DB'));
+db.once('open', () => logger.info('[sk-mongoconnection-module]: connection openned with DB'));
 
-db.on('connected', () => logger.info(`(sk-mongoconnection-module): Mongoose connection is open to: ${config.mongodb.uri}`));
+db.on('connected', () => logger.info(`[sk-mongoconnection-module]: Mongoose connection is openned to: ${config.mongodb.uri}`));
 
-db.on('disconnected', () => logger.info('(sk-mongoconnection-module): Mongoose connection is disconnected'));
+db.on('disconnected', () => logger.info('[sk-mongoconnection-module]: Mongoose connection is disconnected'));
 
 process.on('SIGINT', () => {
   db.close(() => {
-    logger.info('(sk-mongoconnection-module): Mongoose connection is disconnected due to application termination');
+    logger.info('[sk-mongoconnection-module]: Mongoose connection is disconnected due to application termination');
     process.exit(1);
   });
 });
