@@ -14,7 +14,6 @@ const db = Mongoose.createConnection(config.mongodb.uri, {
   useNewUrlParser: true,
 });
 
-
 db.on('error', (err) => {
   logger.error(`[sk-mongoconnection-module]: connection error event: ${err.message}`);
   process.exit(1);

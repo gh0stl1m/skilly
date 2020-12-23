@@ -24,5 +24,10 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "winston": "^3.3.3"
+  },
+  "scripts": {
+    "start:server": "yarn workspace @skilly/api-gw start",
+    "start:web": "yarn workspace @skilly/web-ui dev",
+    "build:web": "yarn workspace @skilly/web-ui build"
   }
 }

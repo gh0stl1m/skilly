@@ -6,3 +6,10 @@ node_modules
 
 # Coverage
 coverage
+
+# Environment files
+.skenv
+.env
+
+# Data volumes
+data

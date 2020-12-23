@@ -3,7 +3,7 @@ const Boom = require('boom');
 const compose = require('koa-compose');
 
 // Load endpoints
-const healthyChecks = require('./healthyChecks');
+const healthyChecks = require('./healthychecks');
 const urlShortner = require('./urlshortner');
 const statistics = require('./statistics');
 

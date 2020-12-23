@@ -4,7 +4,7 @@ const { constants: { supportedEnvironments } } = require('../utils');
 
 let environment;
 let path;
-const env = '.skenv';
+const env = '.env';
 
 switch (process.env.NODE_ENV) {
   case supportedEnvironments.PRODUCTION:
