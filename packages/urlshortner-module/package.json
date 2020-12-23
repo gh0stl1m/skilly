@@ -21,8 +21,8 @@
   },
   "scripts": {
     "lint": "eslint",
-    "test": "jest --config ./config/jest.config.js --watch-all",
-    "coverage": "npm run test --coverage"
+    "tests": "jest --watch-all",
+    "coverage": "jest --coverage"
   },
   "bugs": {
     "url": "https://github.com/gh0stl1m/skilly/issues"

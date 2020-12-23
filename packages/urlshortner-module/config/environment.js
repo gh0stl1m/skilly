@@ -1,6 +1,7 @@
 const dotenv = require('dotenv');
 
-const { supportedEnvironments } = require('../utils/constants');
+const { constants: { supportedEnvironments } } = require('../utils');
+
 let environment;
 let path;
 const env = '.skenv';
