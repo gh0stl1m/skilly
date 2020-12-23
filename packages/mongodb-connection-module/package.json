@@ -1,0 +1,29 @@
+{
+  "name": "@skilly/mongodb-connection-module",
+  "version": "1.0.0",
+  "description": "This module provide an interface that allows another modules or service to get a connection with the mongoDB database",
+  "keywords": [],
+  "author": "Santiago Sanchez Taborda <santiago.sanchez.t@gmail.com>",
+  "license": "ISC",
+  "main": "src/index.js",
+  "directories": {
+    "src": "src"
+  },
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gh0stl1m/skilly.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/gh0stl1m/skilly/issues"
+  },
+  "homepage": "https://github.com/gh0stl1m/skilly#readme"
+}

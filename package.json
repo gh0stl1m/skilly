@@ -1,8 +1,23 @@
 {
   "name": "skilly-root",
   "private": true,
-  "workspaces": ["packages/*"],
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
     "lerna": "^3.22.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gh0stl1m/skilly.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gh0stl1m/skilly/issues"
+  },
+  "homepage": "https://github.com/gh0stl1m/skilly#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "mongoose": "^5.11.8",
+    "winston": "^3.3.3"
   }
 }
