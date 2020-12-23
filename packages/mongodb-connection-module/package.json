@@ -20,7 +20,7 @@
     "url": "git+https://github.com/gh0stl1m/skilly.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "lint": "eslint"
   },
   "bugs": {
     "url": "https://github.com/gh0stl1m/skilly/issues"
@@ -28,5 +28,12 @@
   "homepage": "https://github.com/gh0stl1m/skilly#readme",
   "dependencies": {
     "mongoose": "^5.11.8"
+  },
+  "devDependencies": {
+    "eslint": "^7.16.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1"
   }
 }
