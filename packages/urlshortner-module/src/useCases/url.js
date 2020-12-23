@@ -36,7 +36,7 @@ const shortUrlGenerator = ({ URLModel, idGenerator }) => async (originalUrl, ful
 }
 
 /**
- * 
+ * This function allows to read an URL based on the hash 
  * @param {hash} String
  * @param {Projection} Object - Parameters to be retrieved from the DB
  * 
