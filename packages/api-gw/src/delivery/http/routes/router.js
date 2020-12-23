@@ -5,6 +5,7 @@ const compose = require('koa-compose');
 // Load endpoints
 const healthyChecks = require('./healthyChecks');
 const urlShortner = require('./urlshortner');
+const statistics = require('./statistics');
 
 const allowedMethods = {
   throw: true,
@@ -16,8 +17,9 @@ module.exports = () => {
   const router = new Router();
 
   // Register endpoints into the router
-  router.use(healthyChecks().routes());
   router.use(urlShortner().routes());
+  router.use(healthyChecks().routes());
+  router.use(statistics().routes());
 
   return compose([router.routes(), router.allowedMethods(allowedMethods)]);
 };
