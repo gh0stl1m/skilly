@@ -17,7 +17,6 @@
   "homepage": "https://github.com/gh0stl1m/skilly#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "mongoose": "^5.11.8",
     "winston": "^3.3.3"
   }
 }

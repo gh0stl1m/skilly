@@ -3,7 +3,7 @@ const Mongoose = require('mongoose');
 const config = require('./config/database');
 const logger = require('./utils/logger');
 
-Mongoose.Promise = Bluebird;
+Mongoose.Promise = global.Promise;
 
 const db = Mongoose.createConnection(config.mongodb.uri, {
   auth: {
@@ -11,6 +11,7 @@ const db = Mongoose.createConnection(config.mongodb.uri, {
     password: config.mongodb.pass,
   },
   poolSize: 10,
+  useNewUrlParser: true,
 });
 
 

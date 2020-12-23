@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/gh0stl1m/skilly/issues"
   },
-  "homepage": "https://github.com/gh0stl1m/skilly#readme"
+  "homepage": "https://github.com/gh0stl1m/skilly#readme",
+  "dependencies": {
+    "mongoose": "^5.11.8"
+  }
 }
