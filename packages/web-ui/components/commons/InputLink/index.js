@@ -28,7 +28,7 @@ InputLink.propTypes = {
   onChange: PropTypes.func.isRequired,
   value: PropTypes.string.isRequired,
   isDisabled: PropTypes.bool.isRequired,
-  onFocus: PropTypes.func.isRequired,
+  onFocus: PropTypes.func,
   onBlur: PropTypes.func,
   placeholder: PropTypes.string,
 };
