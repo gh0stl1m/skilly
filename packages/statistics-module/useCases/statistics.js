@@ -17,7 +17,7 @@ const increaseUrlCounter = ({ StatisticsModel }) => async (urlID) => {
   }
 
   logger.info(`[sk-statistics-module]: Increasing the counter for URL ID ${urlID}`);
-  const urlCounterStatus = await StatisticsModel.update({ url: urlID }, { $inc: { counter: 1 } });
+  const urlCounterStatus = await StatisticsModel.updateOne({ url: urlID }, { $inc: { counter: 1 } }, { upsert: true });
 
   if ((urlCounterStatus.ok === 0) || (urlCounterStatus.nModified === 0)) {
     logger.error('[sk-statistics-module]: Something went wrong increasing the counter');

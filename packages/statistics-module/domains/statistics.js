@@ -1,6 +1,6 @@
 const { Schema } = require('mongoose');
 
-const dbConnection = require('../respositories/mongoDB/dbClient');
+const dbConnection = require('../repositories/mongoDB/dbClient');
 
 const StatisticsSchema = new Schema({
   counter: { type: Number, required: true },
